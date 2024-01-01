@@ -1,8 +1,12 @@
 # Infinite-yield-remaster-v1
 Roblox script lua infinite yield remaster 
 
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/porrinha09/Infinite-yield-remaster-v1/main/infinite%20yield.lua",true))()
+```
 
-## Comandos
+
+## Comandos feito por mim 
 
 ;bola
 
