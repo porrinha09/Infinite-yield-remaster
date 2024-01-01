@@ -9989,15 +9989,10 @@ addcmd('ball',{},function(args, speaker)
       		table.foreach(speaker.Character:GetDescendants(),function(_,v)
 
                 if v:IsA'BasePart'and not v:FindFirstChild'BodyGyro'then
-
                     local a=Instance.new('BodyGyro',v)
-
                     a.CFrame=CFrame.new(speaker.Character:FindFirstChildOfClass'Humanoid'.RootPart.Position)
-
                     a.D=-9e9
-
                     a.MaxTorque=Vector3.new(-35,0,35)
-
                     a.P=7
 end)
 
