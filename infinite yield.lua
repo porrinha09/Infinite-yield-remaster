@@ -4249,7 +4249,7 @@ function autoComplete(str,curText)
 end
 
 CMDs = {}
-CMDs[#CMDs + 1] = {NAME = 'HdAdmin', DESC = 'by weszin'}
+CMDs[#CMDs + 1] = {NAME = 'hdadmin', DESC = 'by weszin'}
 CMDs[#CMDs + 1] = {NAME = 'ball', DESC = 'turn into a ball'}
 CMDs[#CMDs + 1] = {NAME = 'remotespy / rspy', DESC = 'Opens Simple Spy V3'}
 CMDs[#CMDs + 1] = {NAME = 'audiologger / alogger', DESC = 'Opens Edges audio logger'}
@@ -10001,7 +10001,7 @@ addcmd('ball',{},function(args, speaker)
                     a.P=7
 end)
 
-addcmd('HdAdmin',{},function(args, speaker)
+addcmd('hdadmin',{},function(args, speaker)
 -- Hd Admin
   loadstring(game:HttpGet("https://raw.githubusercontent.com/porrinha09/Hd-Admin/main/HdAdmin.lua", true))()
 end)
