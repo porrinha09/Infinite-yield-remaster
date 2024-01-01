@@ -4250,7 +4250,6 @@ end
 
 CMDs = {}
 CMDs[#CMDs + 1] = {NAME = 'hdadmin', DESC = 'by weszin'}
-CMDs[#CMDs + 1] = {NAME = 'ball', DESC = 'turn into a ball'}
 CMDs[#CMDs + 1] = {NAME = 'remotespy / rspy', DESC = 'Opens Simple Spy V3'}
 CMDs[#CMDs + 1] = {NAME = 'audiologger / alogger', DESC = 'Opens Edges audio logger'}
 CMDs[#CMDs + 1] = {NAME = 'serverinfo / info', DESC = 'Gives you info about the server'}
@@ -9983,17 +9982,6 @@ addcmd('deleteselectedtool',{'dst'},function(args, speaker)
 			v:Destroy()
 		end
 	end
-end)
-
-addcmd('ball',{},function(args, speaker)
-      		table.foreach(speaker.Character:GetDescendants(),function(_,v)
-
-                if v:IsA'BasePart'and not v:FindFirstChild'BodyGyro'then
-                    local a=Instance.new('BodyGyro',v)
-                    a.CFrame=CFrame.new(speaker.Character:FindFirstChildOfClass'Humanoid'.RootPart.Position)
-                    a.D=-9e9
-                    a.MaxTorque=Vector3.new(-35,0,35)
-                    a.P=7
 end)
 
 addcmd('hdadmin',{},function(args, speaker)
