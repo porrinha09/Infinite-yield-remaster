@@ -367,7 +367,6 @@ Cmdbar.Focused:Connect(function()
             newTabComplete = nil
 		end
 	end)
-end)
 
 Cmdbar.Name = "Cmdbar"
 Cmdbar.Parent = Holder
@@ -4369,7 +4368,7 @@ end
 CMDs = {}
 CMDs[#CMDs + 1] = {NAME = 'hdadmin', DESC = 'by kelvin'}
 CMDs[#CMDs + 1] = {NAME = 'bola', DESC = 'vire uma bola(reseta para tirar), comando add by weszin'}
-CMDs[#CMDs + 1] = {NAME = 'unbola', DESC = 'tirar o comando de bola, by weszin'}
+CMDs[#CMDs + 1] = {NAME = 'cobra', DESC = 'vire uma bola', by weszin'}
 CMDs[#CMDs + 1] = {NAME = 'remotespy / rspy', DESC = 'Opens Simple Spy V3'}
 CMDs[#CMDs + 1] = {NAME = 'hydroxide', DESC = 'by weszin'}
 CMDs[#CMDs + 1] = {NAME = 'audiologger / alogger', DESC = 'Opens Edges audio logger'}
@@ -10236,10 +10235,10 @@ addcmd('bola',{},function(args, speaker)
                 end)
 end)
 
-addcmd('unbola',{},function(args, speaker)
--- unbola
+addcmd('cobra',{},function(args, speaker)
+-- cobra 
 -- by weszin
-tc:Disconnect
+
 end)
 
 addcmd('remotespy',{'rspy'},function(args, speaker)
