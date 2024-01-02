@@ -14,10 +14,9 @@ if not game:IsLoaded() then
 	notLoaded:Destroy()
 end
 
-currentVersion = '1.0'
+currentVersion = '1.0.0'
 
 Players = game:GetService("Players")
-
 Holder = Instance.new("Frame")
 Title = Instance.new("TextLabel")
 Dark = Instance.new("Frame")
@@ -365,8 +364,7 @@ Cmdbar.Focused:Connect(function()
 		else
 			newTabComplete:Disconnect()
             newTabComplete = nil
-		end
-	end)
+		 end
 
 Cmdbar.Name = "Cmdbar"
 Cmdbar.Parent = Holder
